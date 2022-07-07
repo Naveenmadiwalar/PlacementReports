@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="410.0" prefWidth="720.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="Naveen.InsertController">
+   <children>
+      <Label layoutX="23.0" layoutY="26.0" text="Insert into Student">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="susn" layoutX="23.0" layoutY="56.0" prefHeight="26.0" prefWidth="161.0" text="USN" />
+      <TextField fx:id="sname" layoutX="23.0" layoutY="92.0" prefHeight="26.0" prefWidth="161.0" text="Name" />
+      <TextField fx:id="scgpa" layoutX="23.0" layoutY="202.0" prefHeight="26.0" prefWidth="161.0" text="CGPA" />
+      <TextField fx:id="scon" layoutX="23.0" layoutY="237.0" prefHeight="26.0" prefWidth="161.0" text="Contact" />
+      <TextField fx:id="smail" layoutX="23.0" layoutY="270.0" prefHeight="26.0" prefWidth="161.0" text="Email" />
+      <ChoiceBox fx:id="sbranch" layoutX="22.0" layoutY="129.0" prefHeight="26.0" prefWidth="162.0" />
+      <ChoiceBox fx:id="ssem" layoutX="22.0" layoutY="162.0" prefHeight="26.0" prefWidth="162.0" />
+      <Button fx:id="insertStd" layoutX="23.0" layoutY="308.0" mnemonicParsing="false" onAction="#onInsertStudent" text="Insert Student" />
+      <Label layoutX="300.0" layoutY="26.0" text="Insert into Company">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cid" layoutX="300.0" layoutY="56.0" text="Company ID" />
+      <TextField fx:id="cname" layoutX="300.0" layoutY="92.0" text="Company Name" />
+      <TextField fx:id="ccon" layoutX="300.0" layoutY="129.0" text="Contact" />
+      <TextField fx:id="cmail" layoutX="300.0" layoutY="162.0" text="Email" />
+      <TextField fx:id="coffer" layoutX="300.0" layoutY="202.0" text="Offers" />
+      <Button fx:id="insertCmp" layoutX="300.0" layoutY="308.0" mnemonicParsing="false" onAction="#onInsertCmp" text="Insert Company" />
+      <Label layoutX="562.0" layoutY="26.0" text="Insert into Placed">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="pusn" layoutX="562.0" layoutY="57.0" text="USN" />
+      <TextField fx:id="pcid" layoutX="562.0" layoutY="92.0" text="Company ID" />
+      <TextField fx:id="Ppkg" layoutX="562.0" layoutY="129.0" text="Package" />
+      <Button fx:id="insertPlaced" layoutX="562.0" layoutY="308.0" mnemonicParsing="false" onAction="#onInsertPlaced" text="Insert Placed" />
+      <Button fx:id="cancel" layoutX="296.0" layoutY="371.0" mnemonicParsing="false" onAction="#onCancel" prefHeight="26.0" prefWidth="181.0" text="Cancel" />
+      <Separator layoutX="219.0" layoutY="18.0" orientation="VERTICAL" prefHeight="314.0" prefWidth="6.0" />
+      <Separator layoutX="507.0" layoutY="18.0" orientation="VERTICAL" prefHeight="314.0" prefWidth="6.0" />
+      <Separator layoutX="13.0" layoutY="44.0" prefHeight="5.0" prefWidth="738.0" />
+   </children>
+</AnchorPane>
